@@ -1,0 +1,95 @@
+header{
+	width: 980px;
+	margin:0 auto;
+	margin-top: 8px;
+}
+nav,img,.search{
+	display: block;
+	float: left;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.clearfix{
+	display: table;
+	overflow: hidden;
+	zoom: 1;
+	content: '';
+	height: 0; 
+}
+.lu-fr{
+	float: right;
+}
+nav{
+	margin-left: 40px;
+	margin-top: 15px;
+	display: inline-block;
+}
+nav li{
+	list-style:none;
+	float: left;
+	text-align: center;
+}
+nav li:hover {
+	color: #fff;
+	background: #f55100;
+}
+nav li:hover a{
+	color: #fff;
+}
+nav li a{
+	display: inline-block;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.search{
+	margin-top: 32px;
+	margin-left: 48px;
+}
+input{
+	padding: 0;
+}
+input[type="search"]{
+	line-height: 16px;
+	width: 150px;
+	font-size: 14px;
+	border-radius: 12px;
+	padding: 2px;
+	padding-left: 8px;
+	border: 1px solid #d1d1d1;
+}
+input[type="image"]{
+	margin-bottom: -7px;
+	margin-left: -24px;
+}
+input::-webkit-input-placeholder{
+	color: #aaa;
+}
+
+.icon{
+	background: url(../img/social-interso.png) no-repeat;
+	width: 22px;
+	height: 26px;
+	display: inline-block;
+	margin-top: 12px;
+	margin-right: 3px;
+}
+.icon-renren{
+	background-position: -22px 0;
+}
+.icon-weibo{
+	background-position: -45px 0;
+}
+
+.login a{
+	font-size: 13px;
+}
+.login a:nth-child(2){
+	margin-left: 20px;
+}
+.login a:hover{
+	color: #f55100;
+}

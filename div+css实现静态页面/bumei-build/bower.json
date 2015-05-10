@@ -1,0 +1,15 @@
+{
+  "name": "bumei-build",
+  "version": "0.0.0",
+  "authors": [
+    "luxiaojijan <luhuijian2013@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
