@@ -23,8 +23,12 @@ body{
 }
 #download button{
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 0;
 }
 footer{
 	margin-top: 10px;
+}
+hr{
+
+	border-color: #E0D4D4;
 }
