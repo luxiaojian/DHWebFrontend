@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      body {
+          padding-top: 50px;
+          padding-bottom: 40px;
+          color: #5a5a5a;
+      }
+      /*滚动图*/
+      .carousel{
+        height:700px;
+        margin-bottom: 50px;
+      }
+      .carousel .item{
+        height: 700px;
+
+      }
+      .carousel-caption p{
+        margin-bottom:30px;
+        font-size:20px;
+        line-height: 1.8;
+      }
+
+      /*简介*/
+      .summary{
+        padding-left:15px;
+        padding-right:15px;
+      }
+
+      .summary .col-md-4{
+        margin-bottom:20px;
+        text-align:center;
+      }
+
+      /*特征*/
+      .feature-divider{
+        margin: 40px 0;
+      }
+      .feature{
+        padding: 30px 0;
+      }
+
+      .feature-heading{
+        font-size:50px;
+        color: #2a6496;
+      }
+      
+      .feature-heading .text-muted{
+        font-size: 28px;
+      }
+
+      /*响应式*/
+
+      @media (max-width: 768px) {
+        .summary{
+          padding-left:3px;
+          padding-right: 3px;
+        }
+        .carousel{
+          height:300px;
+          margin-bottom: 30px;
+        }
+
+        .carousel .item{
+          height: 300px;
+        }
+        
+        .carousel img{
+          min-height: 300px;
+        }
+
+        .carousel-caption p{
+          font-size: 16px;
+          line-height: 1.4;
+        }
+        
+        .feature-heading{
+          font-size: 34px;
+        }
+
+        .feature-heading .text-muted{
+          font-size: 22px;
+        }
+
+
+      }
+
+      @media (min-width: 992px) {
+        .feature-heading{
+          margin-top: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">选择一款你的自拍神器</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">综述</a></li>
+						<li><a href="#">简述</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">特点 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#feature-tab" data-tab="tab-chrome">Instagram</a></li>
+								<li><a href="#feature-tab" data-tab="tab-firefox">Camera360</a></li>
+								<li><a href="#feature-tab" data-tab="tab-safari">Fxcamera</a></li>
+								<li><a href="#feature-tab" data-tab="tab-opera">美拍</a></li>
+								<li><a href="#feature-tab" data-tab="tab-ie">photoviva</a></li>
+							</ul>
+						</li>
+						<li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>	
+		</nav>
+<div id="carousel-id" class="carousel slide" data-ride="carousel">
+		    <ol class="carousel-indicators">
+		        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+		        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+		        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+		        <li data-target="#carousel-id" data-slide-to="3" class=""></li>
+		        <li data-target="#carousel-id" data-slide-to="4" class=""></li>
+		    </ol>
+		    <div class="carousel-inner">
+		        <div class="item active">
+		            <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="./ii/insbig.jpg">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>Instagram</h1>
+		                    <p>Instagram是一款最初运行在iOS平台上的移动应用，允许用户在任何环境下抓拍下自己的生活记忆，选择图片的滤镜样式。</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">点击下载</a></p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item">
+		            <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="./ii/360big.jpg">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>Camera360</h1>
+		                    <p>Camera360 是成都品果科技有限公司推出的基于iOS、Windows Phone和Android的功能强大的手机摄影软件。</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">点击下载</a></p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item">
+		            <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="./ii/fxbig.jpg">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>FxCamera</h1>
+		                    <p>FxCamera多模相机一款堪称目前最为强悍的相机，它自带的渲染效果极大提升手机拍摄的感染力，艺术感十足！称得上是同类重量级软件。</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">点击下载</a></p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item">
+		            <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="./ii/meibig.jpg">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>美拍</h1>
+		                    <p>美拍是美图秀秀出品的最火的短视频社区。</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">点击下载</a></p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item ">
+		            <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="./ii/pvbig.jpg">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>photoviva</h1>
+		                    <p>PhotoViva是一款丰富的照片处理工具，适用于安卓系统的手机，他可以将你的照片快速变成艺术照，同时还具有许多强在的编辑和处理功能。</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">点击下载</a></p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+    <div class="container summary">
+			<!-- 简介 -->
+			<div class="row">
+				<div class="col-md-3">
+					<img src="./ii/inslogo.jpg" alt="" class="image-circle">
+					<h2>Instagram</h2>
+					<p>Instagram提供了这样一套顺畅的操作流程：拍照--滤镜特效添加说明/添加地点--分享。</p>
+					<p><a href="#" class="btn btn-default">点击我下载</a></p>
+				</div>
+				<div class="col-md-3">
+					<img src="./ii/360.jpg" alt="" class="image-circle">
+					<h2>Camera360</h2>
+					<p>Camera360 for iPhone拥有特效相机、美肤自拍、连拍相机、双重曝光、多格相机和普通相机六大拍摄模式。</p>
+					<p><a href="#" class="btn btn-default">点击我下载</a></p>
+				</div>
+				<div class="col-md-3">
+					<img src="./ii/fxlog.jpg" alt="" class="image-circle">
+					<h2>FxCamera</h2>
+					<p>FXCamera是一款Android平台的趣味特效拍照软件，软件提供多种拍照特效，功能简单，处理照片速度快。</p>
+					<p><a href="#" class="btn btn-default">点击我下载</a></p>
+				</div>
+				<div class="col-md-3">
+					<img src="./ii/pvlogo.jpg" alt="" class="image-circle">
+					<h2>photoviva</h2>
+					<p>PhotoViva具有多种照片模式，油漆刷、抽象派等风格供用户选择，只需要简单的几个步骤就可以把照片变得更加炫丽多姿。</p>
+					<p><a href="#" class="btn btn-default">点击我下载</a></p>
+				</div>
+			</div>
+
+			<!-- 特征 -->
+			<hr class="feature-divider">
+
+			<ul class="nav nav-tabs" id="feature-tab">
+				<li class="active"><a href="#tab-Instagram" data-toggle="tab">instagram</a></li>
+				<li><a href="#tab-firefox" data-toggle="tab">camera360</a></li>
+				<li><a href="#tab-safari" data-toggle="tab">fxcamera</a></li>
+				<li><a href="#tab-ie" data-toggle="tab">美拍</a></li>
+				<li><a href="#tab-opera" data-toggle="tab">photoviva</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab-chrome">
+					<div class="row feature">
+						<div class="col-md-7">
+							<h2 class="feature-heading">instagram<span class="text-muted">使用最广的浏览器</span></h2>
+							<p class="lead">Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。该浏览器是基于其他开源软件所撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
+						</div>
+						<div class="col-md-5"><img src="./ii/ins1.jpg" alt="" class="img-responsive feature-image"></div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-firefox">
+					<div class="row feature">
+						<div class="col-md-7 col-md-push-5">
+							<h2 class="feature-heading">360camera<span class="text-muted">美丽的狐狸</span></h2>
+							<p class="lead">Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器， 使用Gecko引擎（非ie内核），支持多种操作系统如Windows、Mac和linux。</p>
+						</div>
+						<div class="col-md-5 col-md-pull-7"><img src="./ii/360logo.jpg" alt="" class="img-responsive feature-image"></div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-safari">
+					<div class="row feature">
+						<div class="col-md-7">
+							<h2 class="feature-heading">fxcamera <span class="text-muted">Mac用户首选</span></h2>
+							<p class="lead">Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。 Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与IPAD和iPod touch的指定浏览器。</p>
+						</div>
+						<div class="col-md-5"><img src="./ii/fx.jpg" alt="" class="img-responsive feature-image"></div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-opera">
+					<div class="row feature">
+						<div class="col-md-7 col-md-push-5">
+							<h2 class="feature-heading">photoviva<span class="text-muted">小众但易用</span></h2>
+							<p class="lead">Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。 是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。.</p>
+						</div>
+						<div class="col-md-5 col-md-pull-7"><img src="./ii/pv.jpg" alt="" class="img-responsive feature-image"></div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab-ie">
+					<div class="row feature">
+						<div class="col-md-7">
+							<h2 class="feature-heading">美拍<span class="text-muted">你懂的</span></h2>
+							<p class="lead">Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7，8，9，10版本)， 简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。</p>
+						</div>
+						<div class="col-md-5"><img src="./ii/mei.jpg" alt="" class="img-responsive feature-image"></div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<p class="pull-right">
+					<a href="#">回到顶部</a>
+					<p>&copy;多火工作室</p>
+				</p>
+			</footer>
+		</div>
+
+		<!-- 关于 -->
+
+		<div class="modal fade" id="about-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">关于</h4>
+					</div>
+					<div class="modal-body">
+						<p>慕课网隶属于北京慕课科技中心(有限合伙)，是一家从事互联网免费教学的网络教育公司。秉承“开拓、创新、公平、分享”的精神，将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站式互动在线教育品牌。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">已经了解</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

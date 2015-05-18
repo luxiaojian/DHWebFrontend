@@ -1,0 +1,14 @@
+.navbar-inner {
+	background-color:#f58220;
+  /* Gradients for modern browsers, replace as you see fit */
+  background-image: -moz-linear-gradient(top, #f58220, #fedcbd);
+  background-image: -ms-linear-gradient(top, #f58220, #fedcbd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f58220), to(#fedcbd));
+  background-image: -webkit-linear-gradient(top, #f58220, #fedcbd);
+  background-image: -o-linear-gradient(top, #f58220, #fedcbd);
+  background-image: linear-gradient(top, #f58220, #fedcbd);
+  background-repeat: repeat-x;
+
+  /* IE8-9 gradient filter */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#fedcbd', GradientType=0);
+}
