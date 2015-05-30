@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://static.zhihu.com/static/favicon.ico" type="image/x-icon">
+    <title>首页-知乎</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    #navmy {
+        height: 45px;
+        position: relative;
+        margin: 0 auto;
+        width: 960px;
+    }
+    
+    #mainmy {
+        margin: 20px auto;
+        width: 960px;
+    }
+    
+    .navbar,
+    .navbar-header {
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#086ed5), to(#055db5));
+        background-image: -webkit-linear-gradient(top, #086ed5, #055db5);
+        height: 45px;
+        margin: 0;
+    }
+    
+    .navbar-header {
+        width: 91px;
+    }
+    
+    .navbar button {
+        background-color: #0e78e7;
+    }
+    
+    #navtik li:active {
+        background-color: #0257ab;
+    }
+    
+    #navtik li a,
+    #navfik li a {
+        color: white;
+    }
+    
+    .userinfo {
+        height: 40px;
+        width: 90px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #mymenu {
+        height: 164px;
+        background-color: #0666c5;
+        width: 90px;
+    }
+    
+    td {
+        height: 30px;
+    }
+    
+    td,
+    .fincon {
+        font-size: 12px;
+    }
+    
+    td a,
+    span,
+    p,
+    .gray {
+        color: #999;
+    }
+    
+    td a:hover {
+        text-decoration: none;
+    }
+    
+    .question {
+        font-weight: bold;
+        margin-top: 2px;
+        margin-bottom: 3px;
+    }
+    
+    .nav .open>a,
+    .nav .open>a:hover,
+    .nav .open>a:focus,
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:focus,
+    .navbar-inverse .navbar-nav>.active>a:hover {
+        background-color: #074481;
+    }
+    
+    .divhead {
+        font-size: 12px;
+    }
+    
+    .divheadtwo,
+    .divheadtwo a {
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        letter-spacing: 2px;
+    }
+    
+    #ZHtable td,
+    #ZHtable th {
+        height: 38px;
+    }
+    
+    .pg,
+    #con {
+        font-size: 12px;
+        color: black;
+        letter-spacing: 2px;
+    }
+    
+    .close {
+        float: right;
+    }
+    
+    .divider {
+        margin: 10px 0;
+    }
+    
+    .alertmy {
+        padding: 0;
+    }
+    
+    .bottomy span {
+        margin: 0 0 0 5px;
+    }
+    
+    .glyphicon::before {
+        margin-right: 3px;
+    }
+    
+    .round {
+        width: 0.4px;
+        height: 0.4px;
+        display: inline-block;
+        font-size: 0.5px;
+        line-height: 0.4px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .btnup,
+    #ddown {
+        height: 24px;
+        width: 38px;
+        margin-top: 5px;
+        padding: 0;
+    }
+    
+    .btnup:hover {
+        height: 44px;
+        width: 38px;
+        background-color: #698ebf;
+        padding: 0;
+        color: #fff;
+    }
+    
+    .btn {
+        text-align: center;
+    }
+    
+    #num {
+        display: block;
+    }
+    
+    #ddown,
+    #dup {
+        display: none;
+    }
+    
+    .dropdown-menu {
+        min-width: 120px;
+        margin: 0;
+    }
+    
+    .dropdown-menu li {
+        padding: 0 5px;
+        background-color: #074481;
+        height: 40px;
+    }
+    
+    .dropdown-menu li:hover {
+        padding: 0 5px;
+        background-color: #086ed5;
+        height: 40px;
+    }
+    
+    .dropdown-menu li a:hover {
+        background-color: #086ed5;
+    }
+    
+    .dropdown-menu li a {
+        padding-top: 10px;
+        display: block;
+        height: 40px;
+    }
+    
+    .dropdown-menu ul {
+        height: 120px;
+    }
+    
+    .dropdown .glyphicon::before {
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div id="navmy">
+            <div class="navbar-header">
+                <a href="##" class="navbar-brand" style="display:inline-block;padding-top:10px;padding-right:0px;"><img src="./image/logo.png"></a>
+            </div>
+            <form action="##" class="navbar-form navbar-left" rol="search" style="padding-left:0;">
+                <div class="form-group" style="position:relative;">
+                    <input type="text" class="form-control" placeholder="搜索话题、问题或人…" style="background-color:#E1EAF2;width:367px;" />
+                    <span class="glyphicon glyphicon-search" style="position:absolute;right:10px;top:9px;"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:66px;height:32px;">提问</button>
+            </form>
+            <ul class="nav navbar-nav navmy" id="navtik">
+                <li class="active" data-toggle="tab"><a href="##">首页</a></li>
+                <li data-toggle="tab"><a href="##">话题</a></li>
+                <li data-toggle="tab"><a href="##">发现</a></li>
+                <li><a data-toggle="popover" placement="" title="" data-content="">消息</a></li>
+            </ul>
+            <ul class="nav navbar-nav" id="navfik" style="position:absolute;right:10px;top:0;">
+                <li>
+                    <div class="dropdown">
+                        <a data-toggle="dropdown" data-target="#" style="display:inline-block;width:120px;padding:9px 15px;text-decoration:none;"><img src="./image/userhead2.jpg" style="height:27px;width:27px;">&nbsp;站长<span class="badge">4</span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="mymenu" style="padding:0;">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;我的主页</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;私信</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;设置</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+                        </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="margin:0;">
+        <section class="row" id="mainmy">
+            <section class="col-md-8">
+                <span class="glyphicon glyphicon-list-alt"></span><span>&nbsp;编辑推荐</span><span class="glyphicon glyphicon-cog" style="float:right;font-size:12px;margin-top:4px;color:#999;" <a href="#">设置</a></span>
+                <hr class="divider">
+                <div class="row alert alertmy">
+                    <div class="col-md-1">
+                        <img src="./image/userhead1.jpg" class="img-rounded" style="height:38px;width:38px;">
+                        <button class="btn btnup" type="button"><span class="glyphicon glyphicon-triangle-top" id="dup"></span><b id="num">487</b></button>
+                        <button class="btn" id="ddown" type="button"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                    </div>
+                    <div class="col-md-11">
+                        <span class="divhead">热门回答，来自<a href="#" class="gray">&nbsp;宗教</a></span><a class="divhead" href="#" id="hidemy1">&nbsp;关注话题</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" data-toggle="tooltip" data-placement="bottom" title="不感兴趣"><span aria-hidden="true">&times;</span></button>
+                        <p class="question"><a href="#">能否把佛经翻译出《圣经》的味道？能否把《圣经》翻译出佛经的味道？</a></p>
+                        <span class="divheadtwo"><a href="#">孙雅雯</a>，美食家</span>
+                        <p class="pg">先说结论，题主对同学的建议是正确的，PS的盒盖最好取出后再将食盒放入微波炉，但这跟熔化的关系不大。说一些全面的内容，这样更好理解这个问题，没兴趣的话可仅看黑体字；对于塑料，我们需要掌握两项常识，这样就有利于我们平时养成良好的使用习惯：1、塑<span onclick="showtext()" id="showcon">…<a href="#">显示全部</a></span></p>
+                        <p id="con">料的本体是高分子，绝大多数高分子是无毒的； 无论是聚苯乙烯还是聚乙烯、聚丙烯，高分子本身都不具有毒性，因为它们不会和我们身体里的化学物质反应，我们的代谢机制对它们基本是无视；总说膳食纤维对人体好，其实膳食纤维就是这样一种高分子，我们人体拿它没有办法，所以怎么吃进出就怎么那个出来，像维生素之类的一般营养成分都要谈吸收，但膳食纤维起作用就是因为“不吸收”；如果聚乙烯、聚苯乙烯之类的也能吸水，其实未必不能当膳食纤维这么吃。 那么有没有人体能“消化”的塑料呢，现在看也是有的，有些塑料是会在胃酸条件下发生分解的，不说别的，用淀粉做的糖纸就能被消化。当然这是耍赖了，碳水化合物和蛋白质本来就是人体能消化的高分子，因为人体有相应的酶去对付它们。除了这些高分子以外，由于胃酸的pH只有1-2之间，一些酸性条件下会发生解聚的高分子，如聚氨酯、聚乳酸这些耐酸性不是很好的塑料，但是没有酶的参与，硬靠酸去降解的效率是极低的。总之，高分子自身对人体的毒性几乎可以忽略不计。 2、塑料的毒害主要来源于残余单体与助剂； 残余单体是任何高分子合成中都无法避免的，只是含量多与少的问题，所以一些单体有毒的高分子是需要慎重使用的，例如聚氨酯性能这么出色，但极少与食物接触，很大原因就是因为异氰酸酯的毒害问题；因为单体问题而被批评的塑料莫过于PC，双酚A的事情这几年已经被吵翻了。 聚苯乙烯也曾因单体残留的问题被质疑过，它的单体是苯乙烯，具有一定毒性。 但是，深入研究发现，苯乙烯这种单体对人类还是蛮友好的，无论是食入还是吸入，急性毒性都不大；而长期接触的慢性危害似乎也不是很严重，致癌物分类属于2B级，即可能致癌物；但从这个角度来说，能避免就尽量避免，而且这个问题也早被关注了： 热饮杯盖致癌吗？ 通用塑料高分子母料都是大型企业生产，他们对于控制单体非常讲究，不仅是残余单体影响健康的问题，还涉及到转化率问题，转化率越高自然利润越高；也是在这样的双重利益推动下，聚苯乙烯现在单体残余量的问题基本可以忽略。FDA要求：不接触油炸食品的PS单体残余不超过1%，接触油炸食品的PS单体残余不超过0.5%；但是现在PS母料的残余量，一般都在万分之几，足足低了一个数量级。 但是，塑料母料到我们消费者手中时，还要再经过成型加工，这个过程的企业就良莠不齐了，而助剂也正是在这一步进行了添加。 为什么要加那么多种助剂，助剂都有什么？巧了，回答过类似问题可供参考： 在高分子材料中添加的各种添加剂都有什么作用？ - 孙亚飞的回答 为什么我们这么信任PP？其实从原理上讲，就是因为PP可以不加任何助剂直接成型，而且性能差异不大，所以这种前提下，没什么工厂愿意去添加什么助剂。同样的特点还有PET，也就是矿泉水瓶，只是因为温度高于七八十度就会变形，所以相比PP就差一个层次。PS，也就是题主关心的聚苯乙烯要稍微再低一点，因为使用过程中会发生黄变，故而不能肯定塑料加工企业是否添加了抗氧化剂与抗黄变剂（增白剂之类的）。那是不是黄色的PS就安全了呢，就跟有人说菜叶有洞的蔬菜说明没打农药一样？我只能说有这样想法的骚年太机智了，实际上黄变之后的危害更大，都不知道生成了哪些乱七八糟的物质。实际上，很多有色的塑料正是为了掩盖自身的不足才去加的着色剂，总的来说，有色塑料比无色塑料的品质更可疑。 助剂有很多品种，我们不可能一一确定每个盒盖里都是什么配方，就算是同一个企业同一型号的产品，很多因素也会促使他们调整配方，所以要判断盒盖里的助剂是不是耐加热几乎都需要专门去检测，这显然不现实，所以最好的办法就是尽量去避免。大多数食物用微波炉加热时，扣不扣盒盖区别并不大，所以题主的建议还是有道理的。 ============ 那么如题主想知道的，熔化的塑料哪里去了？其实，由于高分子自身的物理属性，在它们熔化时，倾向于缩成一团，那些消失的塑料，其实进入食物的可能性很小，更多是转移到空洞边缘了，可以仔细观察一下，熔化形成的空洞边缘是不是更厚实一些？ 不会变成气体的，小弟才疏学浅，未见过任何一种塑料能在微波炉里汽化的，准确来说，未见过哪个高分子能以气态形式存在而不降解的。
+                        </p>
+                        <div class="fincon gray bottomy"><span style="margin-left:-4px;"><span class="glyphicon glyphicon-plus"></span>关注问题</span>
+                            <span><span class="glyphicon glyphicon-comment"></span>10条评论</span>
+                            <span id="hidemy2">
+                            <span><span class="glyphicon glyphicon-star-empty"></span>感谢</span>
+                            <span><span class="glyphicon glyphicon-share-alt"></span>分享</span>
+                            <span><span class="glyphicon glyphicon-bookmark"></span>收藏</span>
+                            <span><span class="round">●</span>&nbsp;&nbsp;&nbsp;&nbsp;没有帮助</span>
+                            <span><span class="round">●</span>&nbsp;&nbsp;&nbsp;&nbsp;举报</span>
+                            </span>
+                            <span onclick="hidetext()" id="hidecon"><a class="gray fincon" href="#"><span class="glyphicon glyphicon-eject"></span>收起</a>
+                            </span>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="row alert alertmy">
+                    <div class="col-md-1">
+                        <img src="./image/userhead1.jpg" class="img-rounded" style="height:38px;width:38px;">
+                        <button class="btn btnup" type="button"><span class="glyphicon glyphicon-triangle-top" id="dup"></span><b id="num">487</b></button>
+                        <button class="btn" id="ddown" type="button"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                    </div>
+                    <div class="col-md-11">
+                        <span class="divhead">热门回答，来自<a href="#" class="gray">&nbsp;宗教</a></span><a class="divhead" href="#" id="hidemy1">&nbsp;关注话题</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" data-toggle="tooltip" data-placement="bottom" title="不感兴趣"><span aria-hidden="true">&times;</span></button>
+                        <p class="question"><a href="#">这个alert是占页面的，请无视我……11111</a></p>
+                        <span class="divheadtwo"><a href="#">孙雅雯</a>，美食家</span>
+                        <p class="pg">先说结论，题主对同学的建议是正确的，PS的盒盖最好取出后再将食盒放入微波炉，但这跟熔化的关系不大。说一些全面的内容，这样更好理解这个问题，没兴趣的话可仅看黑体字；对于塑料，我们需要掌握两项常识，这样就有利于我们平时养成良好的使用习惯：1、塑<span>…<a href="#">显示全部</a></span></p>
+                        </p>
+                        <div class="fincon gray bottomy"><span style="margin-left:-4px;"><span class="glyphicon glyphicon-plus"></span>关注问题</span>
+                            <span><span class="glyphicon glyphicon-comment"></span>10条评论</span>
+                            </span>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="row alert alertmy">
+                    <div class="col-md-1">
+                        <img src="./image/userhead1.jpg" class="img-rounded" style="height:38px;width:38px;">
+                        <button class="btn btnup" type="button"><span class="glyphicon glyphicon-triangle-top" id="dup"></span><b id="num">487</b></button>
+                        <button class="btn" id="ddown" type="button"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                    </div>
+                    <div class="col-md-11">
+                        <span class="divhead">热门回答，来自<a href="#" class="gray">&nbsp;宗教</a></span><a class="divhead" href="#" id="hidemy1">&nbsp;关注话题</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" data-toggle="tooltip" data-placement="bottom" title="不感兴趣"><span aria-hidden="true">&times;</span></button>
+                        <p class="question"><a href="#">这个alert是占页面的，请无视我……2222</a></p>
+                        <span class="divheadtwo"><a href="#">孙雅雯</a>，美食家</span>
+                        <p class="pg">先说结论，题主对同学的建议是正确的，PS的盒盖最好取出后再将食盒放入微波炉，但这跟熔化的关系不大。说一些全面的内容，这样更好理解这个问题，没兴趣的话可仅看黑体字；对于塑料，我们需要掌握两项常识，这样就有利于我们平时养成良好的使用习惯：1、塑<span>…<a href="#">显示全部</a></span></p>
+                        </p>
+                        <div class="fincon gray bottomy"><span style="margin-left:-4px;"><span class="glyphicon glyphicon-plus"></span>关注问题</span>
+                            <span><span class="glyphicon glyphicon-comment"></span>10条评论</span>
+                            </span>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="row alert alertmy">
+                    <div class="col-md-1">
+                        <img src="./image/userhead1.jpg" class="img-rounded" style="height:38px;width:38px;">
+                        <button class="btn btnup" type="button"><span class="glyphicon glyphicon-triangle-top" id="dup"></span><b id="num">487</b></button>
+                        <button class="btn" id="ddown" type="button"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                    </div>
+                    <div class="col-md-11">
+                        <span class="divhead">热门回答，来自<a href="#" class="gray">&nbsp;宗教</a></span><a class="divhead" href="#" id="hidemy1">&nbsp;关注话题</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" data-toggle="tooltip" data-placement="bottom" title="不感兴趣"><span aria-hidden="true">&times;</span></button>
+                        <p class="question"><a href="#">这个alert是占页面的，请无视我……333</a></p>
+                        <span class="divheadtwo"><a href="#">孙雅雯</a>，美食家</span>
+                        <p class="pg">先说结论，题主对同学的建议是正确的，PS的盒盖最好取出后再将食盒放入微波炉，但这跟熔化的关系不大。说一些全面的内容，这样更好理解这个问题，没兴趣的话可仅看黑体字；对于塑料，我们需要掌握两项常识，这样就有利于我们平时养成良好的使用习惯：1、塑<span>…<a href="#">显示全部</a></span></p>
+                        </p>
+                        <div class="fincon gray bottomy"><span style="margin-left:-4px;"><span class="glyphicon glyphicon-plus"></span>关注问题</span>
+                            <span><span class="glyphicon glyphicon-comment"></span>10条评论</span>
+                            </span>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-offset-1 col-md-3 row">
+                <table class="table-hover col-md-12">
+                    <tbody>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-file"></span>&nbsp;&nbsp;&nbsp;我的草稿</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;我的收藏</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;我关注的问题</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-open-file"></span>&nbsp;&nbsp;&nbsp;邀请我回答的问题</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <hr style="margin:8px 0;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-file"></span>&nbsp;&nbsp;&nbsp;所有问题</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;话题广场</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;首场秀</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-open-file"></span>&nbsp;&nbsp;&nbsp;公共编辑动态</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><span class="glyphicon glyphicon-open-file"></span>&nbsp;&nbsp;&nbsp;社区服务中心</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <hr style="margin:8px 0;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table-hover col-md-12" id="ZHtable">
+                    <th class="">
+                        <span style="color:black;">直乎圆桌</span>
+                        <a href="#" style="display:inline-block;float:right;font-size:11px;">查看全部>></a>
+                    </th>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href=""><img src="./image/pic1.jpg">&nbsp;&nbsp;&nbsp;宝贝小心</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=""><img src="./image/pic2.jpg">&nbsp;&nbsp;&nbsp;问税大厅</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=""><img src="./image/pic3.jpg">&nbsp;&nbsp;&nbsp;你有压力吗</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="fincon">知乎指南 建议反馈 移动应用 加入知乎 知乎协议 商务合作 &copy; 2015 知乎</span>
+            </section>
+        </section>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+    $('div.dropdown').mouseover(function() {
+        $(this).addClass('open');
+    }).mouseout(function() {
+
+    });
+
+    $('.pg').mouseover(function() {
+
+        document.getElementById("hidemy1").style.display = "inline-block";
+        document.getElementById("hidemy2").style.display = "inline-block";
+    }).mouseout(function() {
+        document.getElementById("hidemy1").style.display = "none";
+        document.getElementById("hidemy2").style.display = "none";
+    });
+
+    $('.btnup').mouseover(function() {
+
+        document.getElementById("dup").style.display = "inline-block";
+        document.getElementById("ddown").style.display = "inline-block";
+    }).mouseout(function() {
+        document.getElementById("dup").style.display = "none";
+        document.getElementById("ddown").style.display = "none";
+    });
+
+    $('div.alertmy').mouseover(function() {
+        $('[data-toggle="popover"]').popover();
+    });
+
+    function showtext() {
+        document.getElementById("con").style.display = "inline-block";
+        document.getElementById("hidecon").style.display = "inline-block";
+        document.getElementById("showcon").style.display = "none";
+    }
+
+    function hidetext() {
+        document.getElementById("con").style.display = "none";
+        document.getElementById("hidecon").style.display = "none";
+        document.getElementById("showcon").style.display = "inline-block";
+    }
+    hidetext();
+    </script>
+</body>
+
+</html>
